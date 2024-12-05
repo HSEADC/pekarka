@@ -3,5 +3,7 @@
 @import 'stylesheets/vars.scss';
 @import 'stylesheets/about.scss';
 @import 'stylesheets/recipes.scss';
+@import 'stylesheets/articles.scss';
+@import 'stylesheets/quizzes.scss';
 @import 'stylesheets/main.scss';
 @import 'stylesheets/responsive.scss';
