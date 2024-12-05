@@ -3,15 +3,269 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Рецепты пирожков</title>
+
+		<meta property="og:title" content="Кузовок" />
+		<meta
+			property="og:description"
+			content="Библиотека рецептов выпечки народов России"
+		/>
+		<meta
+			property="og:image"
+			content="https://raw.githubusercontent.com/HSEADC/Kuzovok/refs/heads/mifikaji/src/images/meta_img.png"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://hseadc.github.io/Kuzovok/" />
+
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta
+			property="twitter:url"
+			content="https://hseadc.github.io/Kuzovok/"
+		/>
+		<meta property="twitter:title" content="Кузовок" />
+		<meta
+			property="twitter:description"
+			content="Библиотека рецептов выпечки народов России"
+		/>
+		<meta
+			property="twitter:image"
+			content="https://raw.githubusercontent.com/HSEADC/Kuzovok/refs/heads/mifikaji/src/images/meta_img.png"
+		/>
+
+		<title>Главная</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="images/favicons/favicon.ico"
+		/>
 	</head>
-	<body class="index">
-		<h1>📖 Библиотека рецептов пирожков</h1>
-		<h2>Разделы</h2>
-		<p><a href="recipes.html">Рецепты</a></p>
-		<p><a href="collections.html">Подборки</a></p>
-		<p><a href="articles.html">Статьи</a></p>
-		<p><a href="quizzes.html">Квизы</a></p>
-		<p><a href="about.html">О нас</a></p>
+	<body>
+		<div class="first_screen">
+			<header>
+				<div class="logo"></div>
+				<div class="header_menu">
+					<a class="menu_text" href="index.html">Главная</a>
+					<a class="menu_text" href="recipes.html">Рецепты</a>
+					<a class="menu_text" href="articles.html">Статьи</a>
+					<a class="menu_text" href="quizzes.html">Тесты</a>
+				</div>
+			</header>
+			<h2>библиотека рецептов<br />выпечки народов России</h2>
+			<h1>КУЗОВОК</h1>
+			<form action="">
+				<input
+					type="text"
+					placeholder="Блюда из картофеля"
+					class="search_input"
+				/>
+				<button class="search">Найти рецепт</button>
+			</form>
+		</div>
+		<div class="second_screen">
+			<h3>
+				Ищите рецепты выпечки<br />и знакомьтесь с традициями<br />народов
+				России
+			</h3>
+		</div>
+		<div class="recipes">
+			<div class="category">
+				<div class="category_name">
+					<h4>Рецепты</h4>
+				</div>
+				<div class="view_all">
+					<a href="recipes.html">Смотреть все</a>
+				</div>
+			</div>
+			<div class="extra_text">
+				<h5>
+					Мы собрали рецепты выпечки, которые готовят в разных
+					уголках<br />
+					нашей страны, чтобы вы могли приготовить их дома.
+				</h5>
+			</div>
+			<div class="recipe_cards">
+				<div class="card">
+					<div class="card_recipe_image card_image"></div>
+					<div class="card_name">
+						<h5>Название рецепта</h5>
+					</div>
+					<div class="card_description">
+						<p>
+							Небольшое описание рецепта,<br />
+							буквально пара строк
+						</p>
+					</div>
+					<div class="keywords">
+						<span class="keyword">без мяса</span>
+						<span class="keyword">сибирская кухня</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card_recipe_image card_image"></div>
+					<div class="card_name">
+						<h5>Название рецепта</h5>
+					</div>
+					<div class="card_description">
+						<p>
+							Небольшое описание рецепта,<br />
+							буквально пара строк
+						</p>
+					</div>
+					<div class="keywords">
+						<span class="keyword">без мяса</span>
+						<span class="keyword">сибирская кухня</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card_recipe_image card_image"></div>
+					<div class="card_name">
+						<h5>Название рецепта</h5>
+					</div>
+					<div class="card_description">
+						<p>
+							Небольшое описание рецепта,<br />
+							буквально пара строк
+						</p>
+					</div>
+					<div class="keywords">
+						<span class="keyword">без мяса</span>
+						<span class="keyword">сибирская кухня</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="articles">
+			<div class="category">
+				<div class="category_name">
+					<h4>Статьи</h4>
+				</div>
+				<div class="view_all">
+					<a href="articles.html">Смотреть все</a>
+				</div>
+			</div>
+			<div class="article_cards">
+				<div class="card">
+					<div class="card_image card_article_image"></div>
+					<div class="card_name">
+						<h5>Статья</h5>
+					</div>
+					<div class="card_description">
+						<p>
+							Небольшое описание статьи,<br />
+							буквально пара строк
+						</p>
+					</div>
+					<div class="keywords">
+						<span class="keyword">Карельская кухня</span>
+						<span class="keyword">К празднику</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card_image card_article_image"></div>
+					<div class="card_name">
+						<h5>Статья</h5>
+					</div>
+					<div class="card_description">
+						<p>
+							Небольшое описание статьи,<br />
+							буквально пара строк
+						</p>
+					</div>
+					<div class="keywords">
+						<span class="keyword">К празднику</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card_image card_article_image"></div>
+					<div class="card_name">
+						<h5>Статья</h5>
+					</div>
+					<div class="card_description">
+						<p>
+							Небольшое описание статьи,<br />
+							буквально пара строк
+						</p>
+					</div>
+					<div class="keywords">
+						<span class="keyword">Карельская кухня</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card_image card_article_image"></div>
+					<div class="card_name">
+						<h5>Статья</h5>
+					</div>
+					<div class="card_description">
+						<p>
+							Небольшое описание статьи,<br />
+							буквально пара строк
+						</p>
+					</div>
+					<div class="keywords">
+						<span class="keyword">Карельская кухня</span>
+						<span class="keyword">К празднику</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tests">
+			<div class="category">
+				<div class="category_name">
+					<h4>Тесты</h4>
+				</div>
+				<div class="view_all">
+					<a href="quizzes.html">Смотреть все</a>
+				</div>
+			</div>
+			<div class="test_cards">
+				<div class="card">
+					<div class="card_image card_test_image"></div>
+					<div class="test_text">
+						<div class="card_name">
+							<h5>Тест один</h5>
+						</div>
+						<div class="card_description">
+							<p>Описание теста. Пройди скорей и всё узнай!</p>
+						</div>
+						<div class="keywords">
+							<span class="keyword">Легенды Сибири</span>
+							<span class="keyword">Развлекательный</span>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card_image card_test_image"></div>
+					<div class="test_text">
+						<div class="card_name">
+							<h5>Тест два</h5>
+						</div>
+						<div class="card_description">
+							<p>Описание теста. Пройди скорей и всё узнай!</p>
+						</div>
+						<div class="keywords">
+							<span class="keyword">Легенды Поволжья</span>
+							<span class="keyword">На знание</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="logo"></div>
+			<div class="footer_menu">
+				<a class="menu_text" href="index.html">Главная</a>
+				<a class="menu_text" href="recipes.html">Рецепты</a>
+				<a class="menu_text" href="articles.html">Статьи</a>
+				<a class="menu_text" href="quizzes.html">Тесты</a>
+			</div>
+			<div class="email_form">
+				<h5>Подпишитесь на обновления</h5>
+				<input
+					type="email"
+					placeholder="Ваш email"
+					class="email_input"
+				/>
+				<button class="email_submit">Подписаться</button>
+			</div>
+		</footer>
 	</body>
 </html>
