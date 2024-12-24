@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Кузовок" />
+    <meta property="og:title" content="Пекарка" />
     <meta
       property="og:description"
       content="Библиотека рецептов выпечки народов России"
@@ -17,7 +17,7 @@
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://hseadc.github.io/Kuzovok/" />
-    <meta property="twitter:title" content="Кузовок" />
+    <meta property="twitter:title" content="Пекарка" />
     <meta
       property="twitter:description"
       content="Библиотека рецептов выпечки народов России"
@@ -27,37 +27,70 @@
       content="https://raw.githubusercontent.com/HSEADC/Kuzovok/refs/heads/mifikaji/src/images/meta_img.png"
     />
 
-    <title>Главная</title>
+    <title>Пекарка</title>
     <link rel="icon" type="image/x-icon" href="images/favicons/favicon.ico" />
   </head>
 
   <body>
-    <div class="first_screen">
-      <header>
-        <div class="logo"></div>
-        <div class="header_menu">
-          <a class="menu_text" href="index.html">Главная</a>
-          <a class="menu_text" href="recipes.html">Рецепты</a>
-          <a class="menu_text" href="articles.html">Статьи</a>
-          <a class="menu_text" href="quizzes.html">Тесты</a>
+    <header>
+      <a href="https://hseadc.github.io/Kuzovok/"><div class="logo"></div></a>
+      <nav class="header_menu">
+        <a class="menu_text" href="about.html">О проекте</a>
+        <a class="menu_text" href="recipes.html">Рецепты</a>
+        <a class="menu_text" href="articles.html">Статьи</a>
+        <a class="menu_text" href="quizzes.html">Тесты</a>
+        <form action="https://hseadc.github.io/Kuzovok/">
+          <input type="text" placeholder="Поиск..." />
+        </form>
+        <div class="header_social_icons">
+          <a href="https://t.me/+x4w3aILPXYRlMTEy" target="_blank" class="tg">
+            <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12.9041" cy="12.8677" r="12" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.97714 12.7976C9.26085 11.2087 11.4469 10.153 12.5446 9.64079C15.6688 8.18784 16.3255 7.93697 16.7477 7.92651C16.8415 7.92651 17.0479 7.94742 17.1887 8.07285C17.3013 8.17738 17.3294 8.31327 17.3482 8.4178C17.3669 8.52233 17.3857 8.74184 17.3669 8.90909C17.1981 10.8951 16.4663 15.7139 16.091 17.93C15.9315 18.8707 15.6219 19.1843 15.3216 19.2157C14.6649 19.2784 14.1677 18.7348 13.5391 18.2749C12.5446 17.5537 11.991 17.1042 11.0247 16.3934C9.90821 15.5781 10.6306 15.1286 11.2686 14.3969C11.4375 14.2087 14.3178 11.2819 14.3741 11.0206C14.3834 10.9892 14.3834 10.8638 14.3178 10.8011C14.2521 10.7383 14.1583 10.7593 14.0832 10.7802C13.98 10.8011 12.4038 11.9718 9.33591 14.2819C8.88557 14.6268 8.48214 14.7941 8.11624 14.7836C7.71281 14.7732 6.94349 14.5328 6.3618 14.3237C5.65815 14.0728 5.09523 13.9369 5.14214 13.4979C5.17028 13.268 5.45174 13.038 5.97714 12.7976Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href="https://t.me/+x4w3aILPXYRlMTEy" target="_blank" class="vk">
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12.5669" cy="12.8677" r="12" />
+              <path
+                d="M13.1345 17.809C8.79337 17.809 6.31729 14.6293 6.21411 9.33838H8.38864C8.46006 13.2218 10.0631 14.8667 11.3329 15.2059V9.33838H13.3805V12.6876C14.6345 12.5434 15.9517 11.0172 16.3961 9.33838H18.4437C18.1025 11.4073 16.674 12.9335 15.6581 13.5609C16.674 14.0697 18.301 15.4009 18.92 17.809H16.666C16.1819 16.1979 14.9757 14.9515 13.3805 14.7819V17.809H13.1345Z"
+                fill="white"
+              />
+            </svg>
+          </a>
         </div>
-      </header>
-      <h2>библиотека рецептов<br />выпечки народов России</h2>
-      <h1>КУЗОВОК</h1>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Блюда из картофеля"
-          class="search_input"
-        />
-        <button class="search">Найти рецепт</button>
-      </form>
+      </nav>
+    </header>
+    <div class="first_screen">
+      <img
+        class="first_screen_logo"
+        src="images/logo.svg"
+        alt="Логотип Пекарка"
+      />
+      <p class="first_screen_subtitle">
+        библиотека рецептов выпечки народов России
+      </p>
+      <div class="first_screen_tracery"></div>
+      <div class="first_screen_tracery"></div>
     </div>
     <div class="second_screen">
-      <h3>
+      <div class="second_screen_tracery"></div>
+      <div class="second_screen_tracery"></div>
+      <div class="second_screen_horse"></div>
+      <h2>
         Ищите рецепты выпечки<br />и знакомьтесь с традициями<br />народов
         России
-      </h3>
+      </h2>
     </div>
     <div class="recipes">
       <div class="category">
