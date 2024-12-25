@@ -1,19 +1,16 @@
 @font-face {
-	font-family: 'MV-WEEKEND';
-	src: url(../fonts/MV-WEEKEND.otf);
+	font-family: 'Journal Sans';
+	src: url(../fonts/JournalSans.ttf);
 }
+
 @font-face {
-	font-family: 'Inter-Regular';
-	font-weight: 400;
-	src: url(../fonts/Inter-Regular.otf);
+	font-family: 'Journal Sans Bold';
+	src: url(../fonts/JournalSans-Bold.ttf);
 }
+
 @font-face {
-	font-family: 'Inter-Medium';
-	font-weight: 500;
-	src: url(../fonts/Inter-Medium.otf);
+	font-family: 'Journal Sans Italic';
+	src: url(../fonts/JournalSans-Italic.ttf);
 }
-@font-face {
-	font-family: 'Inter-Bold';
-	font-weight: 700;
-	src: url(../fonts/Inter-Bold.otf);
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
