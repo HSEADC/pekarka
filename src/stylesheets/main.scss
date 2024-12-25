@@ -199,6 +199,19 @@ header {
 .tests {
   margin-bottom: 64px;
 }
+
+header + .recipes,
+header + .articles,
+header + .tests {
+  margin-top: 64px;
+}
+
+.recipes + footer,
+.articles + footer,
+.tests + footer {
+  margin-top: 64px;
+}
+
 .category {
   width: 100%;
   margin: 64px 50px 0;
@@ -208,6 +221,7 @@ header {
 }
 .recipe_cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   margin: 50px 50px 0;
   width: 100%;
@@ -218,7 +232,7 @@ header {
     padding: 20px;
     border: 1px solid #fbe8e9;
     text-decoration: none;
-    width: 100%;
+    width: calc(50% - 10px);
   }
   .recipe_card_top,
   .recipe_card_bottom {
