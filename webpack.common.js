@@ -117,6 +117,11 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      template: './src/recipes/karelskie-kalitki.html',
+      filename: './recipes/karelskie-kalitki.html'
+    }),
+
+    new HtmlWebpackPlugin({
       template: './src/recipes/shangi-s-kartoshkoy-i-syrom.html',
       filename: './recipes/shangi-s-kartoshkoy-i-syrom.html'
     }),
