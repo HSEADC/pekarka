@@ -1,0 +1,255 @@
+body {
+	background-color: #fff9f3;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+h1 {
+	margin-bottom: 2vh;
+}
+
+.first {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/background1.webp);
+	display: flex;
+	justify-content: center;
+}
+.first_logo {
+	width: 40vw;
+	height: 28vh;
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: 30vh;
+}
+
+.pattern1,
+.pattern2 {
+	height: 10vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.pattern1 {
+	background-image: url(../images/pattern_up.webp);
+}
+.pattern2 {
+	background-image: url(../images/pattern_down.webp);
+}
+.block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 1vw;
+	margin-bottom: 2vw;
+	h1 {
+		margin-top: 1vw;
+		margin-bottom: 2vw;
+		width: 80%;
+		height: 10%;
+	}
+}
+.block_text {
+	width: 40%;
+	.main_text {
+		margin-bottom: 1.5vh;
+	}
+}
+.block_images {
+	width: 40%;
+}
+.caption {
+	font-family: 'JournalSans';
+	color: #d71823;
+	font-size: 10pt;
+	margin-bottom: 0.5vh;
+}
+.leaf {
+	height: 20vh;
+	background-image: url(../images/leaf.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 9vw;
+}
+.bird {
+	height: 20vh;
+	background-image: url(../images/bird.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: -7vw;
+	margin-bottom: -1vw;
+	margin-left: 29vw;
+}
+.bread {
+	height: 13vh;
+	background-image: url(../images/bread.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 15vw;
+}
+
+.logo {
+	height: 27vh;
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.logo:hover {
+	background-image: url(../images/logo2.svg);
+}
+
+.red_block {
+	background-color: #d71823;
+	margin-top: 10vh;
+
+	padding: 8vh 0 8vh 10vw;
+	display: flex;
+	flex-direction: column;
+	h1 {
+		color: #fff9f3;
+	}
+	.block_images {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.caption {
+		color: #fff9f3;
+		margin-bottom: 1.5vh;
+	}
+	.image_row {
+		width: 100%;
+		margin-bottom: 2vh;
+		display: flex;
+		flex-direction: row;
+	}
+}
+.colors {
+	width: 55vw;
+	height: 15vh;
+	background-image: url(../images/colors.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.horse {
+	width: 30vw;
+	height: 30vh;
+	background-image: url(../images/horse.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: 3vh;
+	margin-left: 5vw;
+}
+
+.typo {
+	margin-top: 2vw;
+	h1 {
+		margin-top: 1vw;
+		margin-bottom: 2vw;
+		width: 80%;
+		height: 10%;
+	}
+}
+.font_name_o {
+	font-family: 'Oranienbaum', serif;
+	font-size: 50px;
+	text-transform: uppercase;
+	margin-top: -1vh;
+}
+.text_example_o {
+	font-family: 'Oranienbaum', serif;
+	font-size: 20px;
+	margin-bottom: 1.5vh;
+}
+.font_name_j {
+	font-family: 'Journal Sans';
+	font-size: 50px;
+	margin-top: -1vh;
+}
+.text_example_j {
+	font-family: 'Journal Sans';
+	font-size: 16px;
+}
+.grid {
+	width: 100%;
+	height: 80vh;
+	background-image: url(../images/grid.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.birds {
+	height: 20vh;
+	background-image: url(../images/birds.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: 5vh;
+}
+.pattern {
+	height: 6vh;
+	width: 50vw;
+	background-image: url(../images/pattern.webp);
+	background-size: contain;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+.sun,
+.pie {
+	height: 25vh;
+	width: 50vw;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: 2vh;
+}
+.sun {
+	background-image: url(../images/sun.webp);
+}
+.pie {
+	background-image: url(../images/pie.webp);
+}
+
+.last {
+	margin-top: -5vh;
+	position: relative;
+	z-index: +1;
+}
+
+.bag,
+.shop {
+	height: 28vw;
+	width: 50vw;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.bag {
+	background-image: url(../images/bag.webp);
+}
+.shop {
+	background-image: url(../images/shop.webp);
+}
+.block_packages {
+	display: flex;
+	flex-direction: row;
+	.image_row {
+		width: 100%;
+		margin-bottom: 2vh;
+		display: flex;
+		flex-direction: row;
+	}
+}
+.package1,
+.package2 {
+	height: 28vw;
+	width: 50vw;
+	margin-top: 2vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.package1 {
+	background-image: url(../images/package1.webp);
+}
+.package2 {
+	background-image: url(../images/package2.webp);
+}

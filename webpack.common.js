@@ -107,80 +107,8 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/recipes/cherry-pies.html',
-      filename: './recipes/cherry-pies.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/recipes/apple-pies.html',
-      filename: './recipes/apple-pies.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/recipes/karelskie-kalitki.html',
-      filename: './recipes/karelskie-kalitki.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/recipes/shangi-s-kartoshkoy-i-syrom.html',
-      filename: './recipes/shangi-s-kartoshkoy-i-syrom.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/collections/classic-pies.html',
-      filename: './collections/classic-pies.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/collections/pies-for-children.html',
-      filename: './collections/pies-for-children.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/collections/regional-recipes-for-pies.html',
-      filename: './collections/regional-recipes-for-pies.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/collections/pies-for-special-occasions.html',
-      filename: './collections/pies-for-special-occasions.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/articles/pochemu-v-karelii-yedyat-kalitki.html',
-      filename: './articles/pochemu-v-karelii-yedyat-kalitki.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/articles/secrets-of-the-perfect-pie-dough.html',
-      filename: './articles/secrets-of-the-perfect-pie-dough.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/articles/secrets-of-the-perfect-pie-dough.html',
-      filename: './articles/secrets-of-the-perfect-pie-dough.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template:
-        './src/articles/pies-in-the-oven-or-deep-fried-choosing-the-best-cooking-method.html',
-      filename:
-        './articles/pies-in-the-oven-or-deep-fried-choosing-the-best-cooking-method.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/quizzes/what-do-you-know-about-pies.html',
-      filename: './quizzes/what-do-you-know-about-pies.html'
-    }),
-
-    new HtmlWebpackPlugin({
       template: './src/recipes.html',
       filename: './recipes.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/collections.html',
-      filename: './collections.html'
     }),
 
     new HtmlWebpackPlugin({
@@ -191,6 +119,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/quizzes.html',
       filename: './quizzes.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/recipes/karelskie-kalitki.html',
+      filename: './recipes/karelskie-kalitki.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/recipes/shangi-s-kartoshkoy-i-syrom.html',
+      filename: './recipes/shangi-s-kartoshkoy-i-syrom.html'
     })
 
     // Article
