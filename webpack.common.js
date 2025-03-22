@@ -122,13 +122,18 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/recipes/karelskie-kalitki.html',
-      filename: './recipes/karelskie-kalitki.html'
+      template: './src/recipes/kalitki-s-kartofelem.html',
+      filename: './recipes/kalitki-s-kartofelem.html'
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/recipes/shangi-s-kartoshkoy-i-syrom.html',
-      filename: './recipes/shangi-s-kartoshkoy-i-syrom.html'
+      template: './src/recipes/pirozhki-s-myasom-i-lukom.html',
+      filename: './recipes/pirozhki-s-myasom-i-lukom.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/recipes/kulebyaka-s-kapustoy.html',
+      filename: './recipes/kulebyaka-s-kapustoy.html'
     })
 
     // Article

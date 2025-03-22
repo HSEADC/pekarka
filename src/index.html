@@ -74,16 +74,14 @@
     <div class="first_screen">
       <img
         class="first_screen_logo"
-        src="images/logo.svg"
+        src="images/logo_white.svg"
         alt="Логотип Пекарка"
       />
       <p class="first_screen_subtitle">
-        библиотека рецептов выпечки народов России
+        Ищите рецепты выпечки и знакомьтесь с традициями народов России
       </p>
-      <div class="first_screen_tracery"></div>
-      <div class="first_screen_tracery"></div>
     </div>
-    <div class="second_screen">
+    <!-- <div class="second_screen">
       <div class="second_screen_tracery"></div>
       <div class="second_screen_tracery"></div>
       <div class="second_screen_horse"></div>
@@ -91,60 +89,82 @@
         Ищите рецепты выпечки<br />и знакомьтесь с традициями<br />народов
         России
       </h1>
-    </div>
+    </div> -->
     <div class="recipes">
       <div class="category">
-        <h1 class="category_name">Рецепты</h1>
+        <h2 class="category_name">Рецепты</h2>
         <a class="view_all" href="recipes.html">Смотреть все</a>
       </div>
       <div class="recipe_cards">
-        <a class="card" href="karelskie-kalitki.html">
-          <div class="recipe_card_top">
-            <div class="card_name_container">
-              <h2 class="card_name">Карельские калитки</h2>
-              <span class="timer" title="Время приготовления">2 часа</span>
-            </div>
+        <a class="card" href="/recipes/kalitki-s-kartofelem.html">
+          <div class="recipe_card">
             <img
               class="card_recipe_image"
-              src="images/karelskiye-kalitki.webp"
-              alt="Карельские калитки"
+              src="images/recipes/kalitki-with-potatoes.webp"
+              alt="Калитки с картофелем"
             />
-          </div>
-          <div class="recipe_card_bottom">
-            <div class="keywords">
-              <span class="keyword">Без мяса</span>
-              <span class="keyword">Карельская кухня</span>
+            <div class="recipe_card_info">
+              <h3 class="card_name">Калитки с картофелем</h3>
+              <span class="region_tag">карельская кухня</span>
+              <div class="keywords">
+                <span class="timer" title="Время приготовления">1 час</span>
+                <span class="keyword">Без мяса</span>
+              </div>
             </div>
-            <p class="card_description">
-              Небольшие открытые пирожки из ржаного пресного теста с различными
-              начинками, наливками, намазками или припёками. Родиной калиток
-              считается Северная Карелия. Здесь их выпекали ещё до появления
-              христианства на Руси.
-            </p>
           </div>
         </a>
-        <a class="card" href="karelskie-kalitki.html">
-          <div class="recipe_card_top">
-            <div class="card_name_container">
-              <h2 class="card_name">Ватрушки с творогом</h2>
-              <span class="timer" title="Время приготовления">40 минут</span>
-            </div>
+
+        <a class="card" href="/recipes/pirozhki-s-myasom-i-lukom.html">
+          <div class="recipe_card">
             <img
               class="card_recipe_image"
-              src="images/karelskiye-kalitki.webp"
-              alt="Ватрушки с творогом"
+              src="images/recipes/kalitki-with-potatoes.webp"
+              alt="Калитки с картофелем"
             />
-          </div>
-          <div class="recipe_card_bottom">
-            <div class="keywords">
-              <span class="keyword">Без мяса</span>
-              <span class="keyword">Северная кухня</span>
+            <div class="recipe_card_info">
+              <h3 class="card_name">Пирожки с мясом и луком</h3>
+              <span class="region_tag">сибирская кухня</span>
+              <div class="keywords">
+                <span class="timer" title="Время приготовления">1 час 20 минут</span>
+                <span class="keyword">С мясом</span>
+              </div>
             </div>
-            <p class="card_description">
-              Выпечное изделие из сдобного дрожжевого теста в виде лепёшки,
-              в середине которой находится начинка, как правило из творога, реже
-              из варенья или повидла
-            </p>
+          </div>
+        </a>
+
+        <a class="card" href="/recipes/kulebyaka-s-kapustoy.html">
+          <div class="recipe_card">
+            <img
+              class="card_recipe_image"
+              src="images/recipes/kalitki-with-potatoes.webp"
+              alt="Калитки с картофелем"
+            />
+            <div class="recipe_card_info">
+              <h3 class="card_name">Кулебяка с капустой</h3>
+              <span class="region_tag">поволжская кухня</span>
+              <div class="keywords">
+                <span class="timer" title="Время приготовления">2 часа</span>
+                <span class="keyword">Без мяса</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="/recipes/khachapuri-po-imeretinski.html">
+          <div class="recipe_card">
+            <img
+              class="card_recipe_image"
+              src="images/recipes/kalitki-with-potatoes.webp"
+              alt="Калитки с картофелем"
+            />
+            <div class="recipe_card_info">
+              <h3 class="card_name">Хачапури по-имеретински</h3>
+              <span class="region_tag">кавказская кухня</span>
+              <div class="keywords">
+                <span class="timer" title="Время приготовления">1 час 30 минут</span>
+                <span class="keyword">С сыром, без мяса</span>
+              </div>
+            </div>
           </div>
         </a>
       </div>
@@ -203,7 +223,7 @@
         </div>
       </div>
     </div>
-    <div class="tests">
+    <!-- <div class="tests">
       <div class="category">
         <h1 class="category_name">Тесты</h1>
         <a class="view_all" href="quizzes.html">Смотреть все</a>
@@ -215,7 +235,7 @@
         >
           <img
             class="card_test_image"
-            src="images/pies-test.webp"
+            src=" "
             alt="Пирожки"
           />
           <div class="test_text">
@@ -235,7 +255,7 @@
         >
           <img
             class="card_test_image"
-            src="images/pies-test.webp"
+            src=" "
             alt="Пирожки"
           />
           <div class="test_text">
@@ -252,7 +272,7 @@
           </div>
         </a>
       </div>
-    </div>
+    </div> -->
 
     <footer>
       <div class="footer_top">
@@ -321,8 +341,8 @@
           <div class="authors_block">
             <p class="label">Авторы проекта</p>
             <div class="names">
-              <p>Волкова Екатерина</p>
-              <p>Малышева Валерия</p>
+              <p>Титова Екатерина</p>
+              <p>Стровойтова Евгения</p>
               <p>Федоров Дмитрий</p>
             </div>
           </div>
