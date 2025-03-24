@@ -1,0 +1,24 @@
+.Q_Icon_Bird {
+    width: 46px;
+    height: 34px;
+}
+
+.Q_Logo {
+    width: 80px;
+    height: 34px;
+    background-image: url('/src/images/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Q_Recipe_Image {
+    width: 298px;
+    height: 200px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.Q_Time_Icon_Container {
+    width: 12px;
+    height: 12px;
+}

@@ -1,0 +1,25 @@
+.W_Controls_Right {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.W_NavAndControls {
+    display: inline-flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.W_Title_Button_Category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.W_Recipe_Info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}

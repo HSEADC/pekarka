@@ -1,1 +1,3 @@
-import './index.css'
+import '/src/index.css'
+import './scripts/filter.js'
+
