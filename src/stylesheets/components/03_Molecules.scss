@@ -1,0 +1,30 @@
+.M_SearchBox {
+    display: inline-flex;
+    padding: 8px 14px 5px 14px;
+    align-items: center;
+    gap: 14px;
+    border-radius: 100px;
+    border: 1px solid #E35C61;
+    background: #FFF9F3;
+}
+
+.M_Heading_Title {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.M_Recipe_Details {
+    gap: 8px;
+}
+
+.M_Diet_Info {
+    display: flex;
+    gap: 8px;
+}
+
+.M_Time_Info {
+    display: flex;
+    gap: 8px;
+}

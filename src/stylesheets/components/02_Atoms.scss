@@ -1,0 +1,168 @@
+.A_Logo {
+    display: flex;
+    width: 136px;
+    height: 34px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.A_Text_NavLink {
+    display: flex;
+    padding: 8px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #130F1E;
+    font-family: "Journal Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    text-decoration: none;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #D71823;
+        transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.A_Placeholder_Search {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    max-width: 133px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #D71823;
+    font-family: Oranienbaum;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    &::placeholder {
+        color: #D71823;
+        opacity: 1;
+      }
+}
+
+.A_Icon_Search {
+    width: 15px;
+    height: 15px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    fill: #D71823;
+}
+
+.A_Button_Social_VK,
+.A_Button_Social_Telegram {
+    fill: #D71823;
+    width: 34px;
+    height: 34px;
+}
+
+.A_Button_Primary {
+    padding: 16px 40px;
+    border-radius: 10px;
+    border: 2px solid #D71823;
+    text-decoration: none;
+    color: #d71823;
+    font-family: 'Journal Sans';
+    font-size: 16px;
+
+    &:hover {
+        color: white;
+        background-color: #D71823;
+        border: 2px solid #D71823;
+    }
+}
+
+.A_Main_Title {
+    display: flex;
+    width: 766px;
+    max-width: 960px;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+}
+
+.A_Subtitle {
+    width: 766px;
+    max-width: 960px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.A_All_Cuisine_Tag {
+    display: flex;
+    width: max-content;
+    padding: 10px 24px;
+    align-items: center;
+    border-radius: 24px;
+    border: 2px solid #E35C61;
+    color: #D71823;
+    font-family: "Journal Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+        color: white;
+        background-color: #D71823;
+        border: 2px solid #D71823;
+    }
+}
+
+.A_Title_Recipe {
+    width: 284px;
+    margin-bottom: 8px;
+}
+
+.A_Cuisine_Tag {
+    width: fit-content;
+    display: block;
+    padding: 3px 12px;
+    border-radius: 6px;
+    border: 1px solid #d71823;
+    color: #d71823;
+    font-family: 'Journal Sans';
+    font-size: 16px;
+}
+
+.A_Diet_Text {
+    color: #130F1E;
+    font-family: 'Journal Sans';
+    font-size: 16px;
+}
+
+.A_Diet_Info {
+    color: #130F1E;
+    font-family: 'Journal Sans';
+    font-size: 16px;
+}

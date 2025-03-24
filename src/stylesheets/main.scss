@@ -1,36 +1,4 @@
-body {
-  background-color: #fff9f3;
-}
 
-
-
-header {
-  z-index: 100;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
-  padding: 20px 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  background-image: url(../images/logo.svg);
-  width: 60px;
-  height: 25px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.header_menu {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
 .menu_text {
   font-family: 'Oranienbaum', serif;
   font-size: 18px;
@@ -72,23 +40,11 @@ header {
     }
   }
 }
-.social_icons {
-  display: flex;
-  gap: 8px;
-}
-.tg,
-.vk {
-  width: 25px;
-  height: 25px;
-  fill: #d71823;
-  &:hover {
-    fill: #d71823;
-  }
-}
+
 
 .first_screen {
   position: relative;
-  margin : 66px 50px 0;
+  margin : 77px 50px 50px;
   height: 90vh;
   display: flex;
   align-items: center;
@@ -185,9 +141,12 @@ header + .tests {
   margin-top: 64px;
 }
 
+
+
 .recipes + footer,
 .articles + footer,
-.tests + footer {
+.tests + footer,
+.S_Recipes_Page_Content + footer {
   margin-top: 64px;
 }
 
@@ -198,52 +157,7 @@ header + .tests {
   justify-content: space-between;
   align-items: center;
 }
-.recipe_cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 100%;
 
-  a{
-    text-decoration: none;
-  }
-  .recipe_card {
-    box-sizing: border-box;
-    padding: 20px;
-    height: 100%;
-    border-radius: 20px;
-    background-color: white;
-    display: flex;
-    gap: 24px;
-    flex-direction: column;
-    &:hover {
-      box-shadow: 0px 8px 10px 0px #FFF1E3;
-    }
-  }
-  .card_recipe_image {
-    border-radius: 14px;
-    width: 300px;
-    height: 220px;
-    object-fit: cover;
-  }
-  .card_name {
-    width: 300px;
-    margin-bottom: 8px;
-  }
-  .region_tag {
-    padding: 3px 12px;
-    border-radius: 6px;
-    background-color: #d71823;
-    color: white;
-    font-family: 'Journal Sans';
-    font-size: 16px;
-  }
-  .keywords {
-    margin-top: 24px;
-    display: flex;
-    gap: 24px;
-  }
-}
 
 .view_all {
   font-family: 'Journal Sans';
