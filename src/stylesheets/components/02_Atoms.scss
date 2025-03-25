@@ -106,6 +106,10 @@
     justify-content: center;
     align-items: center;
     font-size: 56px;
+
+    @media (max-width: 440px) {
+        width: auto;
+    }
 }
 
 .A_Subtitle {
@@ -113,6 +117,11 @@
     max-width: 960px;
     text-align: center;
     font-size: 20px;
+
+    @media (max-width: 440px) {
+        text-align: left;
+        width: auto;
+    }
 }
 
 .A_All_Cuisine_Tag {
@@ -136,6 +145,10 @@
         color: white;
         background-color: #D71823;
         border: 2px solid #D71823;
+    }
+
+    @media (max-width: 440px) {
+        font-size: 16px;
     }
 }
 
@@ -165,4 +178,8 @@
     color: #130F1E;
     font-family: 'Journal Sans';
     font-size: 16px;
+}
+
+.A_Description_Recipe {
+    text-align: center;
 }

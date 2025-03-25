@@ -17,11 +17,17 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    @media (max-width: 440px) {
+        justify-content: flex-start;
+        margin: auto;
+    }
 }
 
 .C_Tag_Info_Line {
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     max-width: 284px;
     gap: 20px;
 }
