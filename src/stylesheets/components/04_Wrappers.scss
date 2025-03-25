@@ -8,6 +8,10 @@
     display: inline-flex;
     align-items: center;
     gap: 60px;
+
+    @media (max-width: 440px) {
+        display: none;
+    }
 }
 
 .W_Title_Button_Category {
@@ -22,4 +26,26 @@
     align-items: flex-start;
     gap: 20px;
     align-self: stretch;
+}
+
+.W_Recipe_Main_Info {
+    display: flex;
+    width: 660px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: -160px;
+    padding: 60px 113px;
+    border-radius: 20px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+    box-shadow: 0px 4px 14.3px 0px rgba(153, 90, 36, 0.10);
+}
+
+.W_Ingredients_Block {
+    display: flex;
+    width: 660px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
