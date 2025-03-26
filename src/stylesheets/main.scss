@@ -1,44 +1,78 @@
-
-.menu_text {
-  font-family: 'Oranienbaum', serif;
-  font-size: 18px;
-  color: #130f1e;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  &:hover {
-    color: #d71823;
-  }
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
 }
-
-.header_menu {
-  input {
-    position: relative;
-    width: 95px;
-    padding: 0 16px;
-    border: #d71823 1px solid;
-    border-radius: 100px;
-    font-size: 18px;
-    font-family: 'Oranienbaum', serif;
-    color: #d71823;
-    background-color: #fff9f3;
-
-    &:active {
-      border: #d71823 1px solid;
-    }
-
-    &::before {
-      content: '';
-      background-image: url('../images/search_icon.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 10px;
-      top: 10px;
-      width: 24px;
-      height: 24px;
-    }
-  }
+.burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #d71823;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #d71823;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+.menu-list {
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 100px 36px;
+  margin: 0;
+  background: #F5F5F7;
+  list-style-type: none;
+  transform: translateX(100%);
+  transition: .3s;
+  width: 276px;
+  height: 100vh;
+}
+.menu-item {
+  display: block;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.menu-item:hover {
+  background: rgba(255,255,255,.2)
+}
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
 }
 
 
@@ -112,99 +146,7 @@
   }
 }
 
-.second_screen_horse {
-  position: absolute;
-  background-image: url('../images/horse.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 364px;
-  height: 322px;
-  right: -40px;
-  bottom: 40px;
-}
 
-.recipes,
-.articles,
-.tests {
-  padding: 0 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.tests {
-  margin-bottom: 64px;
-}
-
-header + .recipes,
-header + .articles,
-header + .tests {
-  margin-top: 64px;
-}
-
-
-
-.recipes + footer,
-.articles + footer,
-.tests + footer,
-.S_Recipes_Page_Content + footer {
-  margin-top: 64px;
-}
-
-.category {
-  width: 100%;
-  margin: 64px 50px 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.view_all {
-  font-family: 'Journal Sans';
-  font-size: 20px;
-  color: #d71823;
-  box-sizing: border-box;
-  border: 1px solid #d71823;
-  border-radius: 10px;
-  text-decoration: none;
-  padding: 16px 40px;
-
-  &:hover {
-    color: white;
-    background-color: #d71823;
-  }
-}
-
-.keyword {
-  display: block;
-  width: max-content;
-  box-sizing: border-box;
-  font-family: 'Journal Sans';
-  font-size: 16px;
-  color: #130f1e;
-}
-.timer {
-  color: #130f1e;
-  margin-left: 20px;
-  font-family: 'Journal Sans';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  position: relative;
-  &::after {
-    content: '';
-    background-image: url('../images/timer.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: -20px;
-    top: 2px;
-    width: 12px;
-    height: 12px;
-  }
-}
 
 .article_cards {
   display: flex;
@@ -261,49 +203,7 @@ header + .tests {
   }
 }
 
-footer {
-  position: relative;
-  box-sizing: border-box;
-  background-color: #d71823;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-
-  .footer_top {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-  .logo {
-    filter: invert(1) brightness(10);
-  }
-
-  .footer_menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-
-    .footer_menu_item {
-      text-decoration: none;
-      color: white;
-      font-family: 'Journal Sans';
-      &:hover {
-        text-decoration: underline 1px;
-      }
-    }
-  }
-
-  .footer_social_contaner {
-    p {
-      color: white;
-      font-family: 'Journal Sans';
-      margin-bottom: 20px;
-    }
-  }
-  .footer_social_icons {
+.footer_social_icons {
     display: flex;
     gap: 32px;
     .tg,
@@ -316,78 +216,4 @@ footer {
         opacity: 80%;
       }
     }
-  }
-  .footer_bottom {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-top: 40px;
-    p {
-      color: white;
-    }
-    .footer_authors {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 20px;
-
-      .authors_block {
-        display: flex;
-        gap: 24px;
-
-        .label {
-          font-size: 16px;
-          color: white;
-        }
-
-        .names {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 15px;
-          font-size: 14px;
-          color: white;
-        }
-
-        .names span {
-          white-space: nowrap;
-        }
-        &:nth-of-type(2) {
-          gap: 70px;
-        }
-      }
-    }
-  }
-}
-.email_form {
-  p {
-    color: white;
-    margin-bottom: 20px;
-  }
-}
-
-.email_input {
-  box-sizing: border-box;
-  border: 1px solid white;
-  background-color: #d71823;
-  font-family: 'Journal Sans';
-  color: white;
-  font-size: 16px;
-  padding: 16px 20px;
-  margin-right: 16px;
-  &::placeholder {
-    color: white;
-  }
-}
-.email_submit {
-  box-sizing: border-box;
-  border: none;
-  background-color: white;
-  font-family: 'Journal Sans';
-  color: #d71823;
-  font-size: 16px;
-  padding: 16px 20px;
-  cursor: pointer;
-  &:hover {
-    opacity: 80%;
-  }
 }

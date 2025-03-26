@@ -11,6 +11,14 @@
     background-size: contain;
 }
 
+.Q_Logo_White {
+    width: 80px;
+    height: 34px;
+    background-image: url('/src/images/logo_white.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .Q_Recipe_Image {
     width: 298px;
     height: 200px;
@@ -27,9 +35,9 @@
     width: 100%;
     height: 508px;
     border-radius: 50px;
-    background-image: url('/src/images/recipes/kalitki-with-potatoes-cover.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
 
     &::after {
         content: '';
@@ -38,8 +46,21 @@
         background-repeat: no-repeat;
         position: absolute;
         left: 50%;
+        top: -.5px;
         transform: translateX(-50%);
         width: 80px;
         height: 80px;
-      }
+    }
+
+    @media (max-width: 440px) {
+        height: 190px;
+        border-radius: 20px;
+    }
+}
+
+.Q_Ingredient_Separator {
+    flex-grow: 1;
+    border-bottom: 1px dashed #B8B3B3;
+    margin: 0 10px;
+    height: 1px;
 }
