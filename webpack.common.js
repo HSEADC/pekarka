@@ -122,6 +122,23 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      template: './src/404.html',
+      filename: './404.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/500.html',
+      filename: './500.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/505.html',
+      filename: './505.html'
+    }),
+
+    // Recipes
+
+    new HtmlWebpackPlugin({
       template: './src/recipes/kalitki-s-kartofelem.html',
       filename: './recipes/kalitki-s-kartofelem.html'
     }),
@@ -304,7 +321,13 @@ module.exports = {
     // Article
     // new HtmlWebpackPlugin({
     //   template: './src/articles/superorganisms/S_Popup.html',
-    //   filename: './superorganisms/S_Popup.html'
+    //   filename: './articles/S_Popup.html'
+    // }),
+
+    // Quizzes
+    // new HtmlWebpackPlugin({
+    //   template: './src/quizzes/superorganisms/S_Popup.html',
+    //   filename: './quizzes/S_Popup.html'
     // }),
 
     // Partials

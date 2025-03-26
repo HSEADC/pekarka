@@ -10,6 +10,7 @@
 .A_Text_NavLink {
     display: flex;
     padding: 8px 0px;
+    width: max-content;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -63,7 +64,7 @@
     &::placeholder {
         color: #D71823;
         opacity: 1;
-      }
+    }
 }
 
 .A_Icon_Search {
@@ -81,6 +82,14 @@
     fill: #D71823;
     width: 34px;
     height: 34px;
+}
+
+.A_Mobile_Menu {
+    display: none;
+    
+    @media (max-width: 440px) {
+        display: block;
+    }
 }
 
 .A_Button_Primary {
@@ -149,6 +158,8 @@
 
     @media (max-width: 440px) {
         font-size: 16px;
+        padding: 6px 16px;
+
     }
 }
 
@@ -182,4 +193,114 @@
 
 .A_Description_Recipe {
     text-align: center;
+    max-width: 660px;
+}
+
+.A_Main_Title_Recipe {
+    text-align: center;
+    
+    @media (max-width: 440px) {
+        font-size: 40px;
+    }
+}
+
+.A_Step_Number {
+    color: #D71823;
+    font-weight: 700;
+}
+
+.A_Hack {
+    color: #130F1E;
+    font-family: "Journal Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &::marker {
+        color: #D71823;
+    }
+}
+
+.A_Footer_Category_Title {
+    color: white;
+}
+
+.A_Email_Input_Container {
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: none;
+    font-family: 'Journal Sans';
+    color: white;
+    font-size: 16px;
+    padding: 16px 20px;
+    
+
+    &::placeholder {
+        color: white;
+    }
+
+    @media (max-width: 440px) {
+        width: 100%;
+    }
+}
+
+.A_Subscribe_Button_Container {
+    box-sizing: border-box;
+    border: none;
+    background-color: white;
+    font-family: 'Journal Sans';
+    color: #d71823;
+    font-size: 16px;
+    padding: 16px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    &:hover {
+        opacity: 90%;
+    }
+
+    @media (max-width: 440px) {
+        width: 100%;
+    }
+}
+
+.A_Footer_Category_Title {
+    color: white;
+}
+
+.A_Error_No {
+    color: #FFF;
+    text-align: center;
+    font-family: Oranienbaum;
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media (max-width: 440px) {
+        font-size: 100px;
+    }
+}
+
+.A_Error_Text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Journal Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media (max-width: 440px) {
+        font-size: 18px;
+    }
+}
+
+.A_Ornament {
+    width: 100%;
+    height: 46px;
+    background-image: url('../../images/foliage_tracery.svg');
+    background-size: contain;
 }

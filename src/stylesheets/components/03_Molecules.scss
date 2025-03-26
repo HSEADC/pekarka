@@ -13,6 +13,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+
+    @media (max-width: 440px) {
+        gap: 16px;
+    }
 }
 
 .M_Recipe_Details {
@@ -31,6 +35,55 @@
 
 .M_Recipe_Page_Info {
     display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 50px;
+}
+
+.M_Ingredient_Item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.M_Recipe_Step {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.M_Share_Button,
+.M_Undo_Button {
+    display: flex;
+    gap: 8px;
+    width: max-content;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #D71823;
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Journal Sans";
+    font-size: 16px;
+}
+
+.M_Subscribe_Section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.M_Socials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.M_Error_Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
