@@ -4,7 +4,13 @@
 /***/ 270:
 /***/ (() => {
 
-// Фильтрация по тегам кухонь
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+// Фильтрация по тегам
 var multiSelectOptions = [];
 function updateSelectData(option) {
   multiSelectOptions.forEach(function (o) {
@@ -58,7 +64,7 @@ function updateSelectOptionList() {
   });
 }
 function initMultiSelect() {
-  // Получаем все уникальные теги кухонь
+  // Получаем все уникальные теги
   getContentCardDataTags().forEach(function (tag) {
     multiSelectOptions.push({
       text: tag,
@@ -67,12 +73,13 @@ function initMultiSelect() {
   });
 }
 
-// Получаем теги кухонь из карточек
+// Получаем теги из карточек
 function getContentCardDataTags() {
-  var contentCards = document.querySelectorAll('.O_Recipe_Card');
+  var contentCards = [].concat(_toConsumableArray(document.querySelectorAll('.O_Recipe_Card')), _toConsumableArray(document.querySelectorAll('.O_Test_Card_Main')), _toConsumableArray(document.querySelectorAll('.O_Articles_Card')));
   var tags = [];
   contentCards.forEach(function (contentCard) {
-    var cuisineTag = contentCard.querySelector('.A_Cuisine_Tag').textContent.trim();
+    var _contentCard$querySel;
+    var cuisineTag = (_contentCard$querySel = contentCard.querySelector('.A_Cuisine_Tag')) === null || _contentCard$querySel === void 0 || (_contentCard$querySel = _contentCard$querySel.textContent) === null || _contentCard$querySel === void 0 ? void 0 : _contentCard$querySel.trim();
     if (cuisineTag && !tags.includes(cuisineTag)) {
       tags.push(cuisineTag);
     }
@@ -82,7 +89,7 @@ function getContentCardDataTags() {
 
 // Фильтрация контента
 function updateContent() {
-  var contentCards = document.querySelectorAll('.O_Recipe_Card');
+  var contentCards = [].concat(_toConsumableArray(document.querySelectorAll('.O_Recipe_Card')), _toConsumableArray(document.querySelectorAll('.O_Test_Card_Main')), _toConsumableArray(document.querySelectorAll('.O_Articles_Card')));
   var selectedTags = multiSelectOptions.filter(function (opt) {
     return opt.active;
   }).map(function (opt) {
@@ -99,7 +106,8 @@ function updateContent() {
 
   // Фильтруем карточки
   contentCards.forEach(function (contentCard) {
-    var cardCuisine = contentCard.querySelector('.A_Cuisine_Tag').textContent.trim();
+    var _contentCard$querySel2;
+    var cardCuisine = (_contentCard$querySel2 = contentCard.querySelector('.A_Cuisine_Tag')) === null || _contentCard$querySel2 === void 0 || (_contentCard$querySel2 = _contentCard$querySel2.textContent) === null || _contentCard$querySel2 === void 0 ? void 0 : _contentCard$querySel2.trim();
     var shouldShow = selectedTags.includes(cardCuisine);
     contentCard.closest('a').style.display = shouldShow ? 'block' : 'none';
   });
