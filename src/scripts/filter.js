@@ -1,4 +1,4 @@
-// Фильтрация по тегам кухонь
+// Фильтрация по тегам
 const multiSelectOptions = [];
 
 function updateSelectData(option) {
@@ -52,7 +52,7 @@ function updateSelectOptionList() {
 }
 
 function initMultiSelect() {
-  // Получаем все уникальные теги кухонь
+  // Получаем все уникальные теги
   getContentCardDataTags().forEach((tag) => {
     multiSelectOptions.push({
       text: tag,
@@ -61,13 +61,18 @@ function initMultiSelect() {
   });
 }
 
-// Получаем теги кухонь из карточек
+// Получаем теги из карточек
 function getContentCardDataTags() {
-  const contentCards = document.querySelectorAll('.O_Recipe_Card');
+  const contentCards = [
+    ...document.querySelectorAll('.O_Recipe_Card'),
+    ...document.querySelectorAll('.O_Test_Card_Main'),
+    ...document.querySelectorAll('.O_Articles_Card')
+  ];
+  
   const tags = [];
   
   contentCards.forEach((contentCard) => {
-    const cuisineTag = contentCard.querySelector('.A_Cuisine_Tag').textContent.trim();
+    const cuisineTag = contentCard.querySelector('.A_Cuisine_Tag')?.textContent?.trim();
     if (cuisineTag && !tags.includes(cuisineTag)) {
       tags.push(cuisineTag);
     }
@@ -78,7 +83,12 @@ function getContentCardDataTags() {
 
 // Фильтрация контента
 function updateContent() {
-  const contentCards = document.querySelectorAll('.O_Recipe_Card');
+  const contentCards = [
+    ...document.querySelectorAll('.O_Recipe_Card'),
+    ...document.querySelectorAll('.O_Test_Card_Main'),
+    ...document.querySelectorAll('.O_Articles_Card')
+  ];
+  
   const selectedTags = multiSelectOptions.filter(opt => opt.active).map(opt => opt.text);
 
   // Если не выбрано ни одного тега, показываем все карточки
@@ -91,7 +101,7 @@ function updateContent() {
 
   // Фильтруем карточки
   contentCards.forEach((contentCard) => {
-    const cardCuisine = contentCard.querySelector('.A_Cuisine_Tag').textContent.trim();
+    const cardCuisine = contentCard.querySelector('.A_Cuisine_Tag')?.textContent?.trim();
     const shouldShow = selectedTags.includes(cardCuisine);
     contentCard.closest('a').style.display = shouldShow ? 'block' : 'none';
   });

@@ -31,6 +31,11 @@
 .M_Time_Info {
     display: flex;
     gap: 8px;
+
+    @media (max-width: 440px) {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .M_Recipe_Page_Info {
@@ -39,6 +44,10 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+
+    @media (max-width: 440px) {
+        gap: 20px;
+    }
 }
 
 .M_Ingredient_Item {
@@ -86,4 +95,55 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.M_Content_Block {
+    display: flex;
+    width: 660px;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: 440px) {
+        width: 100%;
+    }
+}
+
+.M_Intrusion_Block {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border-radius: 20px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(153, 90, 36, 0.06);
+}
+
+.M_Text_Line {
+    margin-left: 20px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 8px;
+        width: 6px;
+        height: 6px;
+        background-color: #D71823;
+        border-radius: 50%;
+    }
+}
+
+.M_Article_Details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.M_Test_Info_Main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }

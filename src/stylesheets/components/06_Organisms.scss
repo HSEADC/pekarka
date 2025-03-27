@@ -31,7 +31,8 @@
     }
 }
 
-.O_Recipe_Card {
+.O_Recipe_Card,
+.O_Articles_Card {
     box-sizing: border-box;
     padding: 20px;
     height: 100%;
@@ -169,5 +170,50 @@
 
     @media (max-width: 440px) {
         gap: 54px;
+    }
+}
+
+.O_Articles_Card {
+    width: 450px;
+}
+
+.O_Article_Heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 65%;
+
+    @media (max-width: 440px) {
+        font-size: 40px;
+        width: 100%;
+    }
+}
+
+.O_Card_Article_Content {
+    display: flex;
+    width: 660px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    @media (max-width: 440px) {
+        width: 100%;
+    }
+}
+
+.O_Test_Card_Main {
+    display: flex;
+    width: 690px;
+    padding: 18px;
+    align-items: center;
+    gap: 24px;
+    border-radius: 20px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+    box-shadow: 0px 4px 14.3px 0px rgba(153, 90, 36, 0.10);
+
+    @media (max-width: 440px) {
+        width: 100%;
+        flex-wrap: wrap;
     }
 }
