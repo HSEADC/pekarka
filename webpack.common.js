@@ -316,13 +316,68 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/recipes/pirog-s-cheremuhoy-i-smetannoy-zalivkoy.html',
       filename: './recipes/pirog-s-cheremuhoy-i-smetannoy-zalivkoy.html'
-    })
+    }),
 
     // Article
-    // new HtmlWebpackPlugin({
-    //   template: './src/articles/superorganisms/S_Popup.html',
-    //   filename: './articles/S_Popup.html'
-    // }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/babushka-pirog-s-lukom-i-subbotnee-molchanie.html',
+      filename: './articles/babushka-pirog-s-lukom-i-subbotnee-molchanie.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/chto-delat-esli-pirog-ne-propyoksya-no-sverhu-uzhe-rumyanyj.html',
+      filename: './articles/chto-delat-esli-pirog-ne-propyoksya-no-sverhu-uzhe-rumyanyj.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/chto-pekli-na-svadbu-kalitki-karavaj-i-shanezhki.html',
+      filename: './articles/chto-pekli-na-svadbu-kalitki-karavaj-i-shanezhki.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/domashnyaya-skatyortka-pletyonaya-korzina-derevyannaya-doska-kak-sobrat-tepluyu-podachu.html',
+      filename: './articles/domashnyaya-skatyortka-pletyonaya-korzina-derevyannaya-doska-kak-sobrat-tepluyu-podachu.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/kak-mama-uchila-menya-lepit-kulebyaku-i-chto-iz-etogo-vyshlo.html',
+      filename: './articles/kak-mama-uchila-menya-lepit-kulebyaku-i-chto-iz-etogo-vyshlo.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/kak-maslenica-prevratilas-v-bliny-tradicii-i-simvoly.html',
+      filename: './articles/kak-maslenica-prevratilas-v-bliny-tradicii-i-simvoly.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/kak-pahnet-testo-aromaty-kotorye-delayut-dom-uyutnym.html',
+      filename: './articles/kak-pahnet-testo-aromaty-kotorye-delayut-dom-uyutnym.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/kak-zamenit-dorogie-ingredienty-i-ne-isportit-vkus.html',
+      filename: './articles/kak-zamenit-dorogie-ingredienty-i-ne-isportit-vkus.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/kak-zamesti-testo-chtoby-ono-ne-lipko-ne-rvalos-i-ne-zlilo.html',
+      filename: './articles/kak-zamesti-testo-chtoby-ono-ne-lipko-ne-rvalos-i-ne-zlilo.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/kogda_ya_vpervye_poprobovala_kalitki_i_uznala_chto_eto_voobshche.html',
+      filename: './articles/kogda_ya_vpervye_poprobovala_kalitki_i_uznala_chto_eto_voobshche.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/pirog-na-pominki-zachem-v-rossii-pekli-lestnicu-iz-testa.html',
+      filename: './articles/pirog-na-pominki-zachem-v-rossii-pekli-lestnicu-iz-testa.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/posuda_kak_iz_babushkogo_shkafa_iz_chego_podat_vypechku_krasivo.html',
+      filename: './articles/posuda_kak_iz_babushkogo_shkafa_iz_chego_podat_vypechku_krasivo.html'
+    })
 
     // Quizzes
     // new HtmlWebpackPlugin({

@@ -1,9 +1,17 @@
+.S_Index_Page_Content {
+    display: flex;
+    margin : 77px 50px 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
 .S_Recipes_Page_Content {
     display: flex;
     margin: 130px 50px 0;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 64px;
 
     @media (max-width: 440px) {
         margin: 130px 20px 0;
@@ -12,9 +20,11 @@
     }
 }
 
-.S_Recipes {
+.S_Recipes,
+.S_Articles,
+.S_Tests_Main {
+    width: 100%;
     display: flex;
-    margin: 0 50px;
     flex-direction: column;
     gap: 30px;
 
@@ -61,3 +71,49 @@
         gap: 8px 32px;
     }
 }
+
+.S_Article_Page_Content {
+    display: flex;
+    margin: 130px 0 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    @media (max-width: 440px) {
+        margin: 130px 20px 0;
+        align-items: flex-start;
+        gap: 40px;
+    }
+}
+
+.S_Content_Block_Page {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 65%;
+    
+    @media (max-width: 440px) {
+        width: 100%;
+    }
+}
+
+.S_Content_Block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.S_Content_Block4 {
+    display: flex;
+    width: 660px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: 440px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
