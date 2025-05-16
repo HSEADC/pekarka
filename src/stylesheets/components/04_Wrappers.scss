@@ -50,6 +50,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .A_Button_Primary {
+        @media (max-width: 440px) {
+           display: none;
+        }
+    }
+    
 }
 
 .W_Recipe_Info {

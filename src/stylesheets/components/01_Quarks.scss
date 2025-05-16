@@ -96,8 +96,12 @@
 }
 
 .Q_Test_Image_Main {
-    width: 100%;
+    width: 208px;
     height: 208px;
     border-radius: 14px;
     object-fit: cover;
+
+    @media (max-width: 440px) {
+        width: 100%;
+    }
 }

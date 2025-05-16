@@ -377,23 +377,38 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles/posuda_kak_iz_babushkogo_shkafa_iz_chego_podat_vypechku_krasivo.html',
       filename: './articles/posuda_kak_iz_babushkogo_shkafa_iz_chego_podat_vypechku_krasivo.html'
-    })
+    }),
 
     // Quizzes
-    // new HtmlWebpackPlugin({
-    //   template: './src/quizzes/superorganisms/S_Popup.html',
-    //   filename: './quizzes/S_Popup.html'
-    // }),
+    new HtmlWebpackPlugin({
+      template: './src/quizzes/kak-nazyvali-vypechku-v-starinu.html',
+      filename: './quizzes/kak-nazyvali-vypechku-v-starinu.html'
+    }),
 
-    // Partials
-    // new HtmlWebpackPartialsPlugin([
-    //   {
-    //     path: path.join(__dirname, './src/partials/analytics.html'),
-    //     location: 'analytics',
-    //     template_filename: '*',
-    //     priority: 'replace'
-    //   }
-    // ])
+    new HtmlWebpackPlugin({
+      template: './src/quizzes/kakoj-ty-pirozhok.html',
+      filename: './quizzes/kakoj-ty-pirozhok.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/quizzes/kakuyu-vypechku-tebe-nuzhno-ispech-segodnya.html',
+      filename: './quizzes/kakuyu-vypechku-tebe-nuzhno-ispech-segodnya.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/quizzes/kakoj-ty-domashnij-pekar.html',
+      filename: './quizzes/kakoj-ty-domashnij-pekar.html'
+    }),
+
+      // Partials
+      new HtmlWebpackPartialsPlugin([
+        {
+          path: path.join(__dirname, "./src/partials/analytics.html"),
+          location: "analytics",
+          template_filename: "*",
+          priority: "replace",
+        },
+      ]),
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
