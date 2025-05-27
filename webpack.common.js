@@ -8,7 +8,8 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    searchVanilla: './src/scripts/search-vanilla.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -409,6 +410,14 @@ module.exports = {
           priority: "replace",
         },
       ]),
+
+      // Поиск
+      new HtmlWebpackPlugin({
+        template: './src/search.html',
+        filename: 'search.html',
+        chunks: ['index', 'searchVanilla']
+      }),
+
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]

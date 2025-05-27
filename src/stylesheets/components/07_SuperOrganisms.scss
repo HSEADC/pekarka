@@ -22,7 +22,7 @@
 
 .S_Recipes,
 .S_Articles,
-.S_Tests_Main {
+.S_Tests_Mai {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -31,6 +31,18 @@
     @media (max-width: 440px) {
         margin: 0 20px;
     }
+}
+
+.S_Content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+    justify-content: space-between;
+}
+
+.S_Content a {
+    text-decoration: none;
+    width: max-content;
 }
 
 .S_Recipe_Main_Info {
