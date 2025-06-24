@@ -1,149 +1,187 @@
 .M_SearchBox {
-    display: inline-flex;
-    padding: 8px 14px 5px 14px;
-    align-items: center;
-    gap: 14px;
-    border-radius: 100px;
-    border: 1px solid #E35C61;
-    background: #FFF9F3;
+  display: inline-flex;
+  padding: 8px 14px 5px 14px;
+  align-items: center;
+  gap: 14px;
+  border-radius: 100px;
+  border: 1px solid #e35c61;
+  background: #fff9f3;
 }
 
 .M_Heading_Title {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 
-    @media (max-width: 440px) {
-        gap: 16px;
-    }
+  @media (max-width: 440px) {
+    gap: 16px;
+  }
 }
 
 .M_Recipe_Details {
-    gap: 8px;
+  gap: 8px;
 }
 
 .M_Diet_Info {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .M_Time_Info {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 
-    @media (max-width: 440px) {
-        justify-content: center;
-        align-items: center;
-    }
+  @media (max-width: 440px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .M_Recipe_Page_Info {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 
-    @media (max-width: 440px) {
-        gap: 20px;
-    }
+  @media (max-width: 440px) {
+    gap: 20px;
+  }
 }
 
 .M_Ingredient_Item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media (max-width: 440px) {
+    gap: 8px;
+  }
 }
 
 .M_Recipe_Step {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .M_Share_Button,
 .M_Undo_Button {
-    display: flex;
-    gap: 8px;
-    width: max-content;
-    padding: 10px 14px;
-    border-radius: 8px;
-    background: #D71823;
-    text-decoration: none;
-    color: #FFF;
-    font-family: "Journal Sans";
-    font-size: 16px;
+  display: flex;
+  gap: 8px;
+  width: max-content;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #d71823;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Journal Sans";
+  font-size: 16px;
 }
 
 .M_Subscribe_Section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
 }
 
 .M_Socials {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .M_Error_Container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .M_Content_Block {
-    display: flex;
-    width: 660px;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  width: 660px;
+  flex-direction: column;
+  gap: 20px;
 
-    @media (max-width: 440px) {
-        width: 100%;
-    }
+  @media (max-width: 440px) {
+    width: 100%;
+  }
 }
 
 .M_Intrusion_Block {
-    display: flex;
-    width: 100%;
-    padding: 30px;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    border-radius: 20px;
-    border: 1px solid #EDEDED;
-    background: #FFF;
-    box-shadow: 0px 4px 10px 0px rgba(153, 90, 36, 0.06);
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border-radius: 20px;
+  border: 1px solid #ededed;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(153, 90, 36, 0.06);
 }
 
 .M_Text_Line {
-    margin-left: 20px;
-    position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        left: -20px;
-        top: 8px;
-        width: 6px;
-        height: 6px;
-        background-color: #D71823;
-        border-radius: 50%;
-    }
+  margin-left: 20px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background-color: #d71823;
+    border-radius: 50%;
+  }
 }
 
 .M_Article_Details {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .M_Test_Info_Main {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.M_Test_Info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.M_Test_Info_Tag_Line {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.M_Text_Button {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: #d71823;
+  padding: 16px 40px;
+  color: white;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Journal Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
 }

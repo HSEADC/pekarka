@@ -15,7 +15,7 @@
 }
 .burger::before,
 .burger::after {
-  content: '';
+  content: "";
   left: 0;
   position: absolute;
   display: block;
@@ -27,22 +27,22 @@
 .burger::before {
   top: 0;
   box-shadow: 0 11px 0 #d71823;
-  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
 }
 .burger::after {
   bottom: 0;
-  transition: bottom .3s .15s, transform .3s;
+  transition: bottom 0.3s 0.15s, transform 0.3s;
 }
 .burger-checkbox:checked + .burger::before {
   top: 11px;
   transform: rotate(45deg);
-  box-shadow: 0 6px 0 rgba(0,0,0,0);
-  transition: box-shadow .15s, top .3s, transform .3s .15s;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
 }
 .burger-checkbox:checked + .burger::after {
   bottom: 11px;
   transform: rotate(-45deg);
-  transition: bottom .3s, transform .3s .15s;
+  transition: bottom 0.3s, transform 0.3s 0.15s;
 }
 .menu-list {
   top: 0;
@@ -53,10 +53,10 @@
   gap: 12px;
   padding: 100px 36px;
   margin: 0;
-  background: #F5F5F7;
+  background: #f5f5f7;
   list-style-type: none;
   transform: translateX(100%);
-  transition: .3s;
+  transition: 0.3s;
   width: 276px;
   height: 100vh;
 }
@@ -69,12 +69,11 @@
   text-decoration: none;
 }
 .menu-item:hover {
-  background: rgba(255,255,255,.2)
+  background: rgba(255, 255, 255, 0.2);
 }
 .burger-checkbox:checked ~ .menu-list {
   transform: translateX(0);
 }
-
 
 .first_screen_logo {
   width: 550px;
@@ -88,6 +87,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (max-width: 440px) {
+    width: 80%;
+  }
 }
 
 .second_screen {
@@ -104,7 +107,7 @@
 
 .second_screen_tracery {
   position: absolute;
-  background-image: url('../images/foliage_tracery.svg');
+  background-image: url("../images/foliage_tracery.svg");
   background-repeat: repeat;
   background-size: contain;
   width: 100%;
@@ -118,8 +121,6 @@
     transform: rotate(180deg);
   }
 }
-
-
 
 .article_cards {
   display: flex;
@@ -177,16 +178,16 @@
 }
 
 .footer_social_icons {
-    display: flex;
-    gap: 32px;
-    .tg,
-    .vk {
-      width: 25px;
-      height: 25px;
-      fill: white;
-      text-decoration: none;
-      &:hover {
-        opacity: 80%;
-      }
+  display: flex;
+  gap: 32px;
+  .tg,
+  .vk {
+    width: 25px;
+    height: 25px;
+    fill: white;
+    text-decoration: none;
+    &:hover {
+      opacity: 80%;
     }
+  }
 }

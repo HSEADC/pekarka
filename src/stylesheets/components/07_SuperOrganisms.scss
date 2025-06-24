@@ -1,131 +1,144 @@
 .S_Index_Page_Content {
-    display: flex;
-    margin : 77px 50px 64px;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
+  display: flex;
+  margin: 77px 50px 64px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+
+  @media (max-width: 440px) {
+    margin: 77px 20px 64px;
+  }
 }
 
 .S_Recipes_Page_Content {
-    display: flex;
-    margin: 130px 50px 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
+  display: flex;
+  margin: 130px 50px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
 
-    @media (max-width: 440px) {
-        margin: 130px 20px 0;
-        align-items: flex-start;
-        gap: 40px;
-    }
+  @media (max-width: 440px) {
+    margin: 130px 20px 0;
+    align-items: flex-start;
+    gap: 40px;
+  }
 }
 
 .S_Recipes,
 .S_Articles,
 .S_Tests_Mai {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    @media (max-width: 440px) {
-        margin: 0 20px;
-    }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .S_Content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px 20px;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  justify-content: space-between;
 }
 
 .S_Content a {
-    text-decoration: none;
-    width: max-content;
+  text-decoration: none;
+  width: max-content;
 }
 
 .S_Recipe_Main_Info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .S_Recipe_Page {
-    display: flex;
-    margin: 130px 50px 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-
-    @media (max-width: 440px) {
-        margin: 100px 20px 0;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 
 .S_Recipe_Page_Full {
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin: 130px 50px 0;
+  @media (max-width: 440px) {
+    margin: 100px 20px 0;
+  }
 }
 
 .S_Text_NavLink {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 
-    .A_Text_NavLink {
-        color: white;
-    }
+  .A_Text_NavLink {
+    color: white;
+  }
 
-    @media (max-width: 440px) {
-        gap: 8px 32px;
-    }
+  @media (max-width: 440px) {
+    gap: 8px 32px;
+  }
 }
 
 .S_Article_Page_Content {
-    display: flex;
-    margin: 130px 0 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  margin: 130px 0 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 
-    @media (max-width: 440px) {
-        margin: 130px 20px 0;
-        align-items: flex-start;
-        gap: 40px;
-    }
+  @media (max-width: 440px) {
+    margin: 130px 20px 0;
+    align-items: flex-start;
+    gap: 40px;
+  }
 }
 
 .S_Content_Block_Page {
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-    width: 65%;
-    
-    @media (max-width: 440px) {
-        width: 100%;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 65%;
+
+  @media (max-width: 440px) {
+    width: 100%;
+  }
 }
 
 .S_Content_Block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
 .S_Content_Block4 {
-    display: flex;
-    width: 660px;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+  display: flex;
+  width: 660px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 
-    @media (max-width: 440px) {
-        flex-direction: column;
-        width: 100%;
-    }
+  @media (max-width: 440px) {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
+.S_Tests_Main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.S_Search_Content {
+  margin: 77px 50px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-height: 50vh;
+}
