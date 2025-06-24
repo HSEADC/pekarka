@@ -1,107 +1,112 @@
 .Q_Icon_Bird {
-    width: 46px;
-    height: 34px;
+  width: 46px;
+  height: 34px;
+  display: inline-block;
+
+  @media (max-width: 880px) {
+    display: none;
+  }
 }
 
 .Q_Logo {
-    width: 80px;
-    height: 34px;
-    background-image: url('/src/images/logo.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 80px;
+  height: 34px;
+  background-image: url("/src/images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .Q_Logo_White {
-    width: 80px;
-    height: 34px;
-    background-image: url('/src/images/logo_white.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 80px;
+  height: 34px;
+  background-image: url("/src/images/logo_white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .Q_Recipe_Image {
-    width: 298px;
-    height: 200px;
-    border-radius: 14px;
-    object-fit: cover;
+  width: 298px;
+  height: 200px;
+  border-radius: 14px;
+  object-fit: cover;
 }
 
 .Q_Time_Icon_Container {
-    width: 12px;
-    height: 12px;
+  width: 12px;
+  height: 12px;
 
-    @media (max-width: 440px) {
-        width: auto;
-        height: auto;
-        display: flex;
-        align-items: center;
-    }
+  @media (max-width: 440px) {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .Q_Recipe_Main_Image {
-    width: 100%;
-    height: 508px;
-    border-radius: 50px;
-    object-fit: cover;
-    position: relative;
-    z-index: -1;
+  width: 100%;
+  height: 508px;
+  border-radius: 50px;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
 
-    &::after {
-        content: '';
-        background-image: url('/src/images/triangle.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 50%;
-        top: -.5px;
-        transform: translateX(-50%);
-        width: 80px;
-        height: 80px;
-    }
+  &::after {
+    content: "";
+    background-image: url("/src/images/triangle.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: -0.5px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+  }
 
-    @media (max-width: 440px) {
-        height: 190px;
-        border-radius: 20px;
-    }
+  @media (max-width: 440px) {
+    height: 190px;
+    border-radius: 20px;
+  }
 }
 
 .Q_Ingredient_Separator {
-    flex-grow: 1;
-    border-bottom: 1px dashed #B8B3B3;
-    margin: 0 10px;
-    height: 1px;
+  flex-grow: 1;
+  border-bottom: 1px dashed #b8b3b3;
+  margin: 0 10px;
+  height: 1px;
 }
 
 .Q_Article_Divider {
-    height: 2px;
-    width: 65%;
-    background-color: #F3B5B5;
+  height: 2px;
+  width: 65%;
+  background-color: #f3b5b5;
 
-    @media (max-width: 440px) {
-        width: 100%;
-    }
+  @media (max-width: 440px) {
+    width: 100%;
+  }
 }
 
 .Q_Article_Image {
-    width: 100%;
-    height: 260px;
-    border-radius: 20px;
-    object-fit: cover;
+  width: 100%;
+  height: 260px;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .Q_Avatar {
-    width: 70px;
-    height: 70px;
-    border-radius: 100px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
 }
 
 .Q_Test_Image_Main {
-    width: 208px;
-    height: 208px;
-    border-radius: 14px;
-    object-fit: cover;
+  width: 208px;
+  height: 208px;
+  border-radius: 14px;
+  object-fit: cover;
 
-    @media (max-width: 440px) {
-        width: 100%;
-    }
+  @media (max-width: 440px) {
+    width: 100%;
+  }
 }

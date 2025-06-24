@@ -56,6 +56,10 @@
   gap: 20px;
   justify-content: space-between;
   align-items: flex-end;
+
+  @media (max-width: 440px) {
+    gap: 8px;
+  }
 }
 
 .M_Recipe_Step {

@@ -12,6 +12,18 @@
   display: inline-flex;
   align-items: center;
   gap: 60px;
+
+  @media (max-width: 1024px) {
+    gap: 40px;
+  }
+
+  @media (max-width: 880px) {
+    gap: 24px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 16px;
+  }
 }
 
 .W_Index_Cover {
