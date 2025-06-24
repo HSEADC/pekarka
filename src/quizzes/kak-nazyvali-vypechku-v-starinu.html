@@ -103,30 +103,35 @@
     </header>
 
     <div class="O_Test_Card_Start">
-      <img class="Q_Test_Image_Main" src="../images/articles/kak-zamesti-testo-chtoby-ono-ne-lipko-ne-rvalos-i-ne-zlilo.webp" alt="Тест: Как называли выпечку в старину?">
-      <div class="M_Test_Info">
-        <h2 class="A_Test_Article">Как называли выпечку в старину?</h2>
-        <div class="M_Test_Info_Tag_Line">
-          <div class="M_Time_Info">
-                    <div class="Q_Time_Icon_Container">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" title="Время приготовления">
-                        <g clip-path="url(#clip0_2525_1332)">
-                          <path d="M12 6C12 7.18669 11.6481 8.34673 10.9888 9.33342C10.3295 10.3201 9.39246 11.0892 8.2961 11.5433C7.19974 11.9974 5.99334 12.1162 4.82946 11.8847C3.66557 11.6532 2.59647 11.0818 1.75736 10.2426C0.918244 9.40353 0.3468 8.33443 0.115288 7.17054C-0.116223 6.00666 0.00259702 4.80026 0.456723 3.7039C0.910849 2.60754 1.67988 1.67047 2.66658 1.01118C3.65327 0.351894 4.81331 -1.41511e-08 6 0V6H12Z" fill="#130F1E"/>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_2525_1332">
-                            <rect width="12" height="12" rx="3" fill="white"/>
-                          </clipPath>
-                        </defs>
-                      </svg>
+      <div class="O_Test_Start_Content">
+        <img class="Q_Test_Image_Main" src="../images/articles/kak-zamesti-testo-chtoby-ono-ne-lipko-ne-rvalos-i-ne-zlilo.webp" alt="Тест: Как называли выпечку в старину?">
+        <div class="M_Test_Info">
+          <h2 class="A_Test_Article">Как называли выпечку в старину?</h2>
+          <div class="M_Test_Info_Tag_Line">
+            <div class="M_Time_Info">
+                      <div class="Q_Time_Icon_Container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" title="Время приготовления">
+                          <g clip-path="url(#clip0_2525_1332)">
+                            <path d="M12 6C12 7.18669 11.6481 8.34673 10.9888 9.33342C10.3295 10.3201 9.39246 11.0892 8.2961 11.5433C7.19974 11.9974 5.99334 12.1162 4.82946 11.8847C3.66557 11.6532 2.59647 11.0818 1.75736 10.2426C0.918244 9.40353 0.3468 8.33443 0.115288 7.17054C-0.116223 6.00666 0.00259702 4.80026 0.456723 3.7039C0.910849 2.60754 1.67988 1.67047 2.66658 1.01118C3.65327 0.351894 4.81331 -1.41511e-08 6 0V6H12Z" fill="#130F1E"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_2525_1332">
+                              <rect width="12" height="12" rx="3" fill="white"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <span class="A_Diet_Info" title="Время прохождения теста">5 минут</span>
                     </div>
-                    <span class="A_Diet_Info" title="Время прохождения теста">5 минут</span>
-                  </div>
-          <span class="A_Cuisine_Tag">история</span>
+            <span class="A_Cuisine_Tag">история</span>
+          </div>
         </div>
+        <p class="A_Test_Description">Вы точно знаете, чем кулебяка отличается от расстегаев? Проверим! Этот тест для тех, кто любит разбираться в тонкостях традиционной русской выпечки. Вспомните старинные рецепты, включите кулинарную интуицию и попробуйте пройти без ошибок!</p>      
       </div>
-      <p class="A_Test_Description">Вы точно знаете, чем кулебяка отличается от расстегаев? Проверим! Этот тест для тех, кто любит разбираться в тонкостях традиционной русской выпечки. Вспомните старинные рецепты, включите кулинарную интуицию и попробуйте пройти без ошибок!</p>      
       <button class="M_Text_Button">Начать</button>
+      <div id="quiz" class="O_Test_Question" style="display: none;"></div>
+      <div id="result" class="O_Test_Result" style="display: none;"></div>
+
     </div>
 
     <footer class="O_Footer">
@@ -215,5 +220,92 @@
         <p class="A_Text_NavLink">HSE ADC, 2024</p>
       </div>
     </footer>
+
+    <script>
+      const questions = [
+  {
+    text: "В СТАРИНУ КУЛЕБЯКУ НАЗЫВАЛИ «ПИРОГОМ ДЛЯ БОГАТЫХ». ПОЧЕМУ?",
+    options: [
+      "Её готовили только из дорогого теста на сливках",
+      "В кулебяке могло быть до 12 слоев разных начинок",
+      "Её украшали золотыми узорами из теста",
+      "Кулебяку подавали исключительно на царских приёмах"
+    ],
+    correct: 1
+  },
+  // ...ещё вопросы
+];
+
+let current = 0;
+let score = 0;
+
+const startBtn = document.querySelector(".M_Text_Button");
+const quizContainer = document.getElementById("quiz");
+const resultContainer = document.getElementById("result");
+
+startBtn.addEventListener("click", () => {
+  startBtn.style.display = "none";
+  showQuestion();
+  quizContainer.style.display = "block";
+});
+
+function showQuestion() {
+  const q = questions[current];
+  quizContainer.innerHTML = `
+    <div class="M_Question_Block">
+      <p class="A_Test_Question">${q.text}</p>
+      <form id="questionForm" class="C_Answers">
+        ${q.options.map((opt, i) => `
+          <label class="A_Answer_Label">
+            <input type="radio" name="answer" value="${i}" class="A_Answer_Radio" />
+            <span class="A_Answer_Text">${opt}</span>
+          </label>
+        `).join("")}
+        <button type="submit" class="A_Button_Next">Дальше</button>
+      </form>
+    </div>
+  `;
+
+  document.getElementById("questionForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const selected = this.answer.value;
+    if (selected === "") return;
+
+    if (parseInt(selected) === questions[current].correct) score++;
+    current++;
+
+    if (current < questions.length) {
+      showQuestion();
+    } else {
+      showResult();
+    }
+  });
+}
+
+function showResult() {
+  quizContainer.style.display = "none";
+  resultContainer.style.display = "block";
+  resultContainer.innerHTML = `
+    <div class="M_Result_Summary">
+      <p class="A_Test_Score">${score}/${questions.length}</p>
+      <p class="A_Result_Text">Вы неплохо знакомы с культурой национальной выпечки России!</p>
+      <div class="M_Result_Buttons">
+        <button onclick="restartQuiz()" class="A_Button_Retry">Пройти снова</button>
+        <button class="A_Button_Share">Поделиться</button>
+      </div>
+    </div>
+  `;
+}
+
+function restartQuiz() {
+  current = 0;
+  score = 0;
+  resultContainer.style.display = "none";
+  showQuestion();
+  quizContainer.style.display = "block";
+}
+
+  </script>
+
   </body>
 </html>

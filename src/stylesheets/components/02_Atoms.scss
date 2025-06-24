@@ -358,3 +358,38 @@
   color: #d71823;
   font-size: 24px;
 }
+
+.M_Hero_Buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.A_Button_Red {
+  background: #d71823;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-family: Journal Sans;
+  font-size: 16px;
+  gap: 8px;
+  padding: 10px 14px;
+  text-decoration: none;
+  width: max-content;
+}
+
+.A_Button_White {
+  background: #fff;
+  color: #d71823;
+  border-radius: 8px;
+  display: flex;
+  font-family: Journal Sans;
+  font-size: 16px;
+  gap: 8px;
+  padding: 10px 14px;
+  text-decoration: none;
+  width: max-content;
+}
+
+.A_Hero_Headline {
+  color: #fff;
+}
