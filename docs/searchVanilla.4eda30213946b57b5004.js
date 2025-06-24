@@ -3877,16 +3877,16 @@ function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
 var content,
-  container = document.querySelector('.S_Content');
-document.addEventListener('DOMContentLoaded', function () {
+  container = document.querySelector(".S_Content");
+document.addEventListener("DOMContentLoaded", function () {
   getPostTeasers().then(function (data) {
     content = data;
     initSearch();
   });
 });
 function initSearch() {
-  var A_SearchInput = document.querySelector('.A_SearchInput');
-  var A_SearchButton = document.querySelector('.A_SearchButton');
+  var A_SearchInput = document.querySelector(".A_Placeholder_Search");
+  var A_SearchButton = document.querySelector(".A_Icon_Search");
   var requestText = getSearchRequest();
   if (requestText != undefined) {
     A_SearchInput.value = requestText;
@@ -3894,25 +3894,25 @@ function initSearch() {
       searchContent(requestText);
     }
   } else {
-    A_SearchInput.value = '';
+    A_SearchInput.value = "";
   }
-  A_SearchInput.addEventListener('input', function (e) {
+  A_SearchInput.addEventListener("input", function (e) {
     requestText = e.target.value;
     if (requestText.length >= 3) {
-      A_SearchButton.classList.remove('disabled');
+      A_SearchButton.classList.remove("disabled");
     } else {
-      A_SearchButton.classList.add('disabled');
+      A_SearchButton.classList.add("disabled");
     }
   });
-  A_SearchInput.addEventListener('keydown', function (e) {
+  A_SearchInput.addEventListener("keydown", function (e) {
     requestText = e.target.value;
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       setSearchRequest(requestText);
       searchContent(requestText);
     }
   });
-  A_SearchButton.addEventListener('click', function (e) {
-    if (!e.target.classList.contains('disabled')) {
+  A_SearchButton.addEventListener("click", function (e) {
+    if (!e.target.classList.contains("disabled")) {
       requestText = A_SearchInput.value;
       setSearchRequest(requestText);
       searchContent(requestText);
@@ -3920,18 +3920,18 @@ function initSearch() {
   });
 }
 function setSearchRequest(requestText) {
-  var url = window.location.href.split('?')[0];
-  window.location.href = url + '?request=' + requestText;
+  var url = window.location.href.split("?")[0];
+  window.location.href = url + "?request=" + requestText;
 }
 function getSearchRequest() {
   var url = new URL(window.location.href);
   var searchParams = new URLSearchParams(url.search);
-  if (searchParams.has('request')) {
-    return searchParams.get('request');
+  if (searchParams.has("request")) {
+    return searchParams.get("request");
   }
 }
 function searchContent(requestText) {
-  container.innerHTML = '';
+  container.innerHTML = "";
   var contentItemIds = [];
   content.forEach(function (contentDataItem) {
     var nbspRegEx = /[\u202F\u00A0]/gm;
@@ -3939,8 +3939,8 @@ function searchContent(requestText) {
     var title = contentDataItem.title,
       description = contentDataItem.description,
       id = contentDataItem.id;
-    title = title.replaceAll(nbspRegEx, ' ').replaceAll(punctuationRegEx, '');
-    description = description.replaceAll(nbspRegEx, ' ').replaceAll(punctuationRegEx, '');
+    title = title.replaceAll(nbspRegEx, " ").replaceAll(punctuationRegEx, "");
+    description = description.replaceAll(nbspRegEx, " ").replaceAll(punctuationRegEx, "");
     if (requestText.length >= 3) {
       if (title.toLowerCase().includes(requestText.toLowerCase()) || description.toLowerCase().includes(requestText.toLowerCase())) {
         contentItemIds.push(id);
@@ -3954,7 +3954,7 @@ function searchContent(requestText) {
   }
 }
 function renderNothingFounded() {
-  container.innerHTML = 'Ничего не найдено :(';
+  container.innerHTML = "\n    <div class=\"W_Search_No_Result\">\n      <p class=\"A_Search_Not_Found\">\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E :(</p>\n      <p class=\"A_Search_Not_Found_Sub\">\u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0438\u0437\u043C\u0435\u043D\u0438\u0442\u044C \u0437\u0430\u043F\u0440\u043E\u0441 \u0438\u043B\u0438 \u0432\u0432\u0435\u0441\u0442\u0438 \u0434\u0440\u0443\u0433\u043E\u0435 \u0441\u043B\u043E\u0432\u043E</p>\n    </div>\n  ";
 }
 function renderCardsByIds(ids) {
   ids = _toConsumableArray(new Set(ids));
@@ -3971,23 +3971,23 @@ function createCards(contentDataItem) {
     tag = contentDataItem.tag,
     image = contentDataItem.image,
     url = contentDataItem.url;
-  var cardLink = document.createElement('a');
+  var cardLink = document.createElement("a");
   cardLink.href = url;
-  var card = document.createElement('div');
-  card.classList.add('O_Articles_Card');
-  var cardImage = document.createElement('img');
-  cardImage.classList.add('A_Image_Article');
+  var card = document.createElement("div");
+  card.classList.add("O_Articles_Card");
+  var cardImage = document.createElement("img");
+  cardImage.classList.add("A_Image_Article");
   cardImage.src = image;
   cardImage.alt = title;
-  var cardInfo = document.createElement('div');
-  cardInfo.classList.add('W_Article_Info');
-  var cardDetails = document.createElement('div');
-  cardDetails.classList.add('M_Article_Details');
-  var cardTitle = document.createElement('h3');
-  cardTitle.classList.add('A_Title_Article');
+  var cardInfo = document.createElement("div");
+  cardInfo.classList.add("W_Article_Info");
+  var cardDetails = document.createElement("div");
+  cardDetails.classList.add("M_Article_Details");
+  var cardTitle = document.createElement("h3");
+  cardTitle.classList.add("A_Title_Article");
   cardTitle.innerText = title;
-  var cardTag = document.createElement('span');
-  cardTag.classList.add('A_Cuisine_Tag');
+  var cardTag = document.createElement("span");
+  cardTag.classList.add("A_Cuisine_Tag");
   cardTag.innerText = tag;
   cardDetails.appendChild(cardTitle);
   cardDetails.appendChild(cardTag);
@@ -3997,6 +3997,21 @@ function createCards(contentDataItem) {
   cardLink.appendChild(card);
   container.appendChild(cardLink);
 }
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.querySelector(".M_SearchBox");
+  if (form) {
+    var currentHost = window.location.hostname;
+    if (currentHost.includes("localhost")) {
+      form.action = "/search.html";
+    } else {
+      form.action = "/pekarka/search.html";
+    }
+  }
+  getPostTeasers().then(function (data) {
+    content = data;
+    initSearch();
+  });
+});
 })();
 
 /******/ })()
